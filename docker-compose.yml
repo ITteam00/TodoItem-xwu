@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  todolist.api:
+    image: ${DOCKER_REGISTRY-}todolistapi
+    build:
+      context: .
+      dockerfile: ToDoList.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+        - 5211:80
+        - 5212:443 
