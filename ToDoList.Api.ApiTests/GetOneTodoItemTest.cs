@@ -33,7 +33,8 @@ public class GetOneTodoItemTest : IClassFixture<CustomWebApplicationFactory>, IA
 
     [Fact]
     public async void should_get_todo_by_given_id()
-    {
+    {   
+        // Arrange
         var todoItem = new ToDoItem
         {
             Id = "5f9a7d8e2d3b4a1eb8a7d8e2",
@@ -44,13 +45,15 @@ public class GetOneTodoItemTest : IClassFixture<CustomWebApplicationFactory>, IA
 
         await _mongoCollection.InsertOneAsync(todoItem);
 
+        // Act
         var response = await _client.GetAsync("/api/v1/todoitems/5f9a7d8e2d3b4a1eb8a7d8e2");
 
+        // Assert
         response.EnsureSuccessStatusCode();
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         var content = await response.Content.ReadAsStringAsync();
 
-        var returnedTodos = JsonSerializer.Deserialize<ToDoItem>(content, new JsonSerializerOptions
+        var returnedTodos = JsonSerializer.Deserialize<ToDoItemDto>(content, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         });
@@ -61,5 +64,15 @@ public class GetOneTodoItemTest : IClassFixture<CustomWebApplicationFactory>, IA
         Assert.False(returnedTodos.Done);
     }
 
+    [Fact]
+    public async void should_get_NOTFOUND_by_invalid_id()
+    {
+        // Arrange
+        
+        // Act
+        var response = await _client.GetAsync("/api/v1/todoitems/not_exist_id");
 
+        // Assert
+        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+    }
 }
