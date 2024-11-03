@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc.Testing;
 using MongoDB.Driver;
 using System.Net;
 using System.Text.Json;
@@ -5,15 +6,15 @@ using ToDoList.Api.Models;
 
 namespace ToDoList.Api.ApiTests;
 
-public class GetOneTodoItemTest : IClassFixture<CustomWebApplicationFactory>, IAsyncLifetime
+public class GetOneTodoItemTest : IClassFixture<WebApplicationFactory<Program>>, IAsyncLifetime
 {
 
 
-    private readonly CustomWebApplicationFactory _factory;
+    private readonly WebApplicationFactory<Program> _factory;
     private readonly HttpClient _client;
     private IMongoCollection<ToDoItem> _mongoCollection;
 
-    public GetOneTodoItemTest(CustomWebApplicationFactory factory) {
+    public GetOneTodoItemTest(WebApplicationFactory<Program> factory) {
         _factory = factory;
         _client = _factory.CreateClient();
 
@@ -30,6 +31,7 @@ public class GetOneTodoItemTest : IClassFixture<CustomWebApplicationFactory>, IA
 
     // DisposeAsync 在测试完成后运行（如果有需要的话）
     public Task DisposeAsync() => Task.CompletedTask;
+
 
     [Fact]
     public async void should_get_todo_by_given_id()
