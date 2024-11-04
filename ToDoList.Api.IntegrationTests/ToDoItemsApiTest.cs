@@ -51,7 +51,7 @@ namespace ToDoList.Api.IntegrationTests
             getAllResponse.EnsureSuccessStatusCode();
             var toDoItems = await getAllResponse.Content.ReadFromJsonAsync<List<ToDoItemDto>>();
             Assert.NotNull(toDoItems);
-            Assert.Single(toDoItems!);
+            Assert.Single(toDoItems);
 
 
             var getResponse = await client.GetAsync(url + $"/{id}");
