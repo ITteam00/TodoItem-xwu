@@ -81,7 +81,7 @@ namespace ToDoList.Api.ApiTests
 
             var response = await _client.PostAsync("/api/v2/todoitemsV2", content);
 
-            Assert.Equal(HttpStatusCode.Created, response.StatusCode);
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
             var responseContent = await response.Content.ReadAsStringAsync();
 

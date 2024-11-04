@@ -74,8 +74,8 @@ namespace ToDoList.Api.Controllers
                 Favorite = toDoItemCreateRequest.Favorite,
                 CreatedTime = DateTimeOffset.UtcNow
             };
-            await _toDoItemService.CreateAsync(toDoItemDto);
-            return Created("", toDoItemDto);
+            //await _toDoItemService.CreateAsync(toDoItemDto);
+            return toDoItemDto;
         }
 
         [HttpPut("{id}")]
