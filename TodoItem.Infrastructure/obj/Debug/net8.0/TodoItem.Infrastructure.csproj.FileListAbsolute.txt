@@ -1,0 +1,16 @@
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\bin\Debug\net8.0\TodoItem.Infrastructure.deps.json
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\bin\Debug\net8.0\TodoItem.Infrastructure.dll
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\bin\Debug\net8.0\TodoItem.Infrastructure.pdb
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\bin\Debug\net8.0\TodoItems.Core.dll
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\bin\Debug\net8.0\TodoItems.Core.pdb
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.Infrastructure.csproj.AssemblyReference.cache
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.Infrastructure.AssemblyInfoInputs.cache
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.Infrastructure.AssemblyInfo.cs
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.Infrastructure.sourcelink.json
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.BB189879.Up2Date
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.Infrastructure.dll
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\refint\TodoItem.Infrastructure.dll
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\TodoItem.Infrastructure.pdb
+C:\BootCamp\agile\TodoItems\TodoItem.Infrastructure\obj\Debug\net8.0\ref\TodoItem.Infrastructure.dll
