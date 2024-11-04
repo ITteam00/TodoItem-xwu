@@ -54,7 +54,10 @@ builder.Services.AddAuthorization();
 builder.Services.AddSingleton<IToDoItemService, ToDoItemService>();
 builder.Services.AddScoped<ITodoItemService, TodoItemService>();
 builder.Services.AddScoped<ITodoItemsRepository, TodoItemMongoRepository>();
-
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<CustomExceptionFilter>();
+});
 builder.Services.Configure<ToDoItemDatabaseSettings>(builder.Configuration.GetSection("ToDoItemDatabase"));
 var app = builder.Build();
 
