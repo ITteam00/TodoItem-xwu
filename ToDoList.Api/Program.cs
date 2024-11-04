@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
+using TodoItem.Infrastructure;
+using TodoItems.Core;
 using ToDoList.Api;
 using ToDoList.Api.Services;
 
@@ -50,6 +52,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 builder.Services.AddAuthorization();
 
 builder.Services.AddSingleton<IToDoItemService, ToDoItemService>();
+builder.Services.AddScoped<ITodoItemService, TodoItemService>();
+builder.Services.AddScoped<ITodoItemsRepository, TodoItemMongoRepository>();
+
 builder.Services.Configure<ToDoItemDatabaseSettings>(builder.Configuration.GetSection("ToDoItemDatabase"));
 var app = builder.Build();
 

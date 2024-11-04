@@ -15,10 +15,10 @@ namespace ToDoList.Api.Controllers
     {
 
         private readonly ITodoItemService _toDoItemService;
-        private readonly ILogger<ToDoItemsController> _logger;
+        private readonly ILogger<ToDoItemsV2Controller> _logger;
 
 
-        public ToDoItemsV2Controller(ITodoItemService toDoItemService, ILogger<ToDoItemsController> logger)
+        public ToDoItemsV2Controller(ITodoItemService toDoItemService, ILogger<ToDoItemsV2Controller> logger)
         {
             _toDoItemService = toDoItemService;
             _logger = logger;
