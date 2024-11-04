@@ -51,5 +51,24 @@ namespace ToDoList.Api.Controllers
             return toDoItemDto;
         }
 
+
+        [HttpPut("{id}")]
+        [ProducesResponseType(typeof(ToDoItemDto), 200)]
+        [ProducesResponseType(typeof(ToDoItemDto), 201)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(500)]
+        [SwaggerOperation(
+            Summary = "Upsert Item",
+            Description = "Create or replace a to-do item by id"
+            )]
+        public async Task<ActionResult<ToDoItemDto>> PutAsync(string id, [FromBody] ToDoItemDto toDoItemDto)
+        {
+            TodoItemDto mappedTodoItem = ToDoItemDto.MapToTodoItemDto(toDoItemDto);
+
+            _toDoItemService.UpdateItem(mappedTodoItem.Id, mappedTodoItem.Description);
+
+            return toDoItemDto;
+        }
+
     }
 }
