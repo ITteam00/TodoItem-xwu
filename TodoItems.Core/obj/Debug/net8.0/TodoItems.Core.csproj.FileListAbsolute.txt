@@ -1,0 +1,12 @@
+C:\BootCamp\agile\TodoItems\TodoItems.Core\bin\Debug\net8.0\TodoItems.Core.deps.json
+C:\BootCamp\agile\TodoItems\TodoItems.Core\bin\Debug\net8.0\TodoItems.Core.dll
+C:\BootCamp\agile\TodoItems\TodoItems.Core\bin\Debug\net8.0\TodoItems.Core.pdb
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\TodoItems.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\TodoItems.Core.AssemblyInfoInputs.cache
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\TodoItems.Core.AssemblyInfo.cs
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\TodoItems.Core.csproj.CoreCompileInputs.cache
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\TodoItems.Core.sourcelink.json
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\TodoItems.Core.dll
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\refint\TodoItems.Core.dll
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\TodoItems.Core.pdb
+C:\BootCamp\agile\TodoItems\TodoItems.Core\obj\Debug\net8.0\ref\TodoItems.Core.dll
